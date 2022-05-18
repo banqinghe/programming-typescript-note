@@ -4,5 +4,6 @@ import WindiCSS from 'vite-plugin-windicss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/programming-typescript-note/',
   plugins: [react(), WindiCSS()],
 });
