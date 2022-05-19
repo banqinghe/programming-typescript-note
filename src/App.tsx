@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Intro from './pages/posts/intro';
 import Chapter3 from './pages/posts/chapter3';
 import Chapter4 from './pages/posts/chapter4';
+import Chapter5 from './pages/posts/chapter5';
 import Header from './pages/Header';
 import Sidebar from './pages/Sidebar';
 
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/" element={<Intro />} />
             <Route path="/chapter3" element={<Chapter3 />} />
             <Route path="/chapter4" element={<Chapter4 />} />
+            <Route path="/chapter5" element={<Chapter5 />} />
           </Routes>
         </div>
       </div>
