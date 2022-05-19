@@ -1,8 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import Intro from './pages/posts/intro';
-import Chapter3 from './pages/posts/chapter3';
-import Chapter4 from './pages/posts/chapter4';
-import Chapter5 from './pages/posts/chapter5';
+import {
+  Intro,
+  Chapter3AllTypes as Chapter3,
+  Chapter4Function as Chapter4,
+  Chapter5ClassInterface as Chapter5,
+} from './pages/post';
+
 import Header from './pages/Header';
 import Sidebar from './pages/Sidebar';
 

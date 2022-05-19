@@ -6,7 +6,8 @@
     "dev": "vite --port 3100",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "node ./bin/deploy.js"
+    "deploy": "node ./scripts/deploy.mjs",
+    "twoslash": "twoslash notes src/pages/posts/ && node scripts/generate-post-components.mjs"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -23,5 +24,8 @@
     "vite": "^2.9.9",
     "vite-plugin-windicss": "^1.8.4",
     "windicss": "^3.5.3"
+  },
+  "config": {
+    "node": 29389338
   }
 }
