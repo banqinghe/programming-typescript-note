@@ -1,5 +1,6 @@
 import { IconGithub, IconTypeScriptText, IconContent } from '../icons';
 import { Link } from 'react-router-dom';
+import chapters from '../config/chapters.json';
 import cn from 'classnames';
 
 interface ListItemProps {
@@ -66,15 +67,11 @@ export default function Header() {
           tabIndex={0}
           className="dropdown-content menu px-2 py-2 shadow bg-white rounded w-max"
         >
-          <li>
-            <ListLink link="/">Intro</ListLink>
-          </li>
-          <li>
-            <ListLink link="/chapter3">Chapter 3: All Types</ListLink>
-          </li>
-          <li>
-            <ListLink link="/chapter4">Chapter 4: Function</ListLink>
-          </li>
+          {chapters.map(item => (
+            <li key={item.link}>
+              <ListLink link={item.link}>{item.title}</ListLink>
+            </li>
+          ))}
           <li>
             <hr className="my-1" />
             <ListLink
