@@ -11,7 +11,7 @@ export default function App() {
       <Header />
       <div className="flex-1 flex">
         <Sidebar />
-        <div className="py-6 w-10/12 md:w-9/12 xl:w-6/12 mx-auto">
+        <div className="py-6 px-3 md:px-0 w-12/12 md:w-9/12 xl:w-6/12 mx-0 md:mx-auto">
           <Routes>
             <Route path="/" element={<Intro />} />
             <Route path="/chapter3" element={<Chapter3 />} />

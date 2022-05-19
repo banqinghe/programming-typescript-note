@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
 import cn from 'classnames';
-import { IconContent } from '../icons';
 
 const links = [
   { label: 'Intro', link: '/' },
@@ -12,11 +11,7 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <aside className="min-w-max border-r">
-      {/* <h2 className="flex items-center gap-3 px-6 py-4 text-base">
-        <IconContent style={{ fontSize: 22 }} />
-        <span>Contents</span>
-      </h2> */}
+    <aside className="min-w-max border-r hidden md:block">
       <ul
         className="sticky top-[var(--header-height)] py-4 text-base space-y-1"
         style={{ fontFamily: 'Helvetica' }}
