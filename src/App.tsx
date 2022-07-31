@@ -4,6 +4,7 @@ import {
   Chapter3AllTypes as Chapter3,
   Chapter4Function as Chapter4,
   Chapter5ClassInterface as Chapter5,
+  Chapter6TypeAdvanced as Chapter6,
 } from './pages/post';
 
 import Header from './pages/Header';
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/chapter3" element={<Chapter3 />} />
             <Route path="/chapter4" element={<Chapter4 />} />
             <Route path="/chapter5" element={<Chapter5 />} />
+            <Route path="/chapter6" element={<Chapter6 />} />
           </Routes>
         </div>
       </div>
